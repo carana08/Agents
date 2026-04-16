@@ -12,15 +12,19 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 - Prefer reproducible dependency and build workflows.
 - Ask before changing the local environment.
 - Never expose secrets or real environment values.
+- Protect the host system by isolating project dependencies whenever possible.
 
 ## Conventions
-- Prefer local virtual environments for Python projects.
+- Prefer a local `.venv` in the project root for Python projects.
 - Prefer checking `package.json` before suggesting npm commands.
 - Prefer using the project's real dependency files and scripts.
 - Validate environment readiness before build execution.
+- Treat Markdown runbooks as executable operational procedures when explicitly invoked.
 
 ## Accepted Decisions
 - `npm init` should only be used for new project initialization, not arbitrary existing repos.
-- Python dependency installation should prefer local venv-based workflows.
+- Python dependency installation should always prefer a local `.venv`-based workflow.
+- Global Python package installation is not acceptable for normal project setup.
+- If a Python environment is corrupted, recreate `.venv` instead of modifying the system interpreter.
 - Missing build tools or system libraries should be diagnosed before changing dependencies.
 - Secret values must always be redacted.

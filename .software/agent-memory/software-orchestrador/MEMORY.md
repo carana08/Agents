@@ -20,6 +20,7 @@ Keep this short (aim <200 lines). Record only durable routing conventions, accep
 - Security review and secret-handling concerns go to the security agent.
 - Dart and Flutter tasks go to the Dart agent.
 - Deployment and release tasks go to the deployment agent.
+- Markdown runbooks and instruction files go to the read-instructions agent.
 - Documentation tasks go to the documentation agent.
 
 ## Accepted Decisions

@@ -45,6 +45,11 @@ Use `deployment-agent` for:
 - build and release workflows
 - runtime configuration and deployment readiness
 
+Use `read-instructions-agent` for:
+- executing Markdown runbooks or instruction files
+- converting an operational checklist into delegated specialist work
+- coordinating multi-step procedures defined outside the current chat
+
 Use `documentation-agent` for:
 - installation guides
 - user manuals
@@ -67,4 +72,4 @@ Handle the request directly only when it is lightweight orchestration work and n
 ## Memory
 
 Stable routing decisions belong in:
-`.software/agent-memory/software-orchestrator/MEMORY.md`
+`memory/software-orchestrador/MEMORY.md`
