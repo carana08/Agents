@@ -269,4 +269,4 @@ Prioritize:
 
 If durable Django conventions, repeated app structure decisions, or stable test workflow rules need to be stored, save them in:
 
-`.software/agent-memory/django-agent/MEMORY.md`
+`.config/opencode/memory/django-agent/MEMORY.md`

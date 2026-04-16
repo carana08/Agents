@@ -176,7 +176,7 @@ Project Memory
 
 If durable class-modeling decisions need to be stored, save them in:
 
-.codex.d/agent-memory/architect-agent/class-diagram-skill/MEMORY.md
+.config/opencode/memory/class-diagram-skill/MEMORY.md
 
 Use that memory for:
 

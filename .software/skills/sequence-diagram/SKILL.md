@@ -250,7 +250,7 @@ Project Memory
 
 If durable sequence-modeling decisions need to be stored, save them in:
 
-/.software/agent-memory/architect-agent/sequence-diagram/MEMORY.md
+/.config/opencode/memory/sequence-diagram/MEMORY.md
 
 Use that memory for:
 

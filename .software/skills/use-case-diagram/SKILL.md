@@ -363,7 +363,7 @@ Project Memory
 
 If durable use case modeling decisions need to be stored, save them in:
 
-/.software/agent-memory/architect-agent/use-case-diagram/MEMORY.md
+/.config/opencode/memory/use-case-diagram/MEMORY.md
 
 Use that memory for:
 

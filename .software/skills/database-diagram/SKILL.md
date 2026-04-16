@@ -279,7 +279,7 @@ Project Memory
 
 If durable schema conventions need to be stored, save them in:
 
-.software/agent-memory/architect-agent/database-diagram/MEMORY.md
+.config/opencode/memory/database-diagram/MEMORY.md
 
 Use that memory for:
 

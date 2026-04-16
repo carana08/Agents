@@ -1,4 +1,5 @@
 ---
+name: dart-agent
 description: "Specialized Dart and Flutter agent for mobile application workflows. Use this agent for Flutter-specific development, testing, UI interaction validation, async behavior analysis, API consumption behavior, and Flutter automation by delegating to the appropriate skills."
 mode: subagent
 ---
@@ -78,4 +79,4 @@ Delegate endpoint-centered API contract checks to the `api-validation` skill whe
 
 If durable Flutter routing conventions or stable project-specific mobile app constraints need to be stored, save them in:
 
-`.software/agent-memory/dart-agent/MEMORY.md`
+`.config/opencode/memory/dart-agent/MEMORY.md`

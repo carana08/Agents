@@ -364,4 +364,4 @@ This skill should be especially useful for requests such as:
 
 If durable Flutter conventions, accepted project structure decisions, repeated testing rules, or stable execution considerations need to be stored, save them in:
 
-`.software/agent-memory/dart-agent/MEMORY.md`
+`.config/opencode/memory/agent-memory/flutter/MEMORY.md`

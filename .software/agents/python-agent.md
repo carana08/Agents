@@ -237,4 +237,4 @@ Prioritize:
 
 If durable Python conventions, repeated package structure decisions, or stable test workflow rules need to be stored, save them in:
 
-`.software/agent-memory/python-agent/MEMORY.md`
+`.config/opencode/memory/python-agent/MEMORY.md`

@@ -165,4 +165,4 @@ This skill should be especially useful for requests such as:
 
 If durable API conventions, repeated contract rules, or stable integration expectations need to be stored, save them in:
 
-`.software/agent-memory/api-validation/MEMORY.md`
+`.config/opencode/memory/api-validation/MEMORY.md`

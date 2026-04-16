@@ -95,4 +95,4 @@ Prioritize:
 
 If persistent architectural conventions, diagram assumptions, naming decisions, or stable structural constraints need to be stored, save them in:
 
-`.software/agent-memory/architect-agent/MEMORY.md`
+`.config/opencode/memory/architect-agent/MEMORY.md`

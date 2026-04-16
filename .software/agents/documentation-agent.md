@@ -266,4 +266,4 @@ Prioritize:
 
 If durable documentation conventions, accepted templates, preferred section structures, or stable project terminology need to be stored, save them in:
 
-`.software/agent-memory/documentation-agent/MEMORY.md`
+`.config/opencode/memory/documentation-agent/MEMORY.md`

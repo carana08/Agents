@@ -170,4 +170,4 @@ Prioritize:
 
 If durable routing conventions, orchestration rules, or stable project-level software constraints need to be stored, save them in:
 
-`.software/agent-memory/software-orchestrator/MEMORY.md`
+`.config/opencode/memory/software-orchestrator/MEMORY.md`

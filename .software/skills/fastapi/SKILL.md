@@ -253,4 +253,4 @@ This skill should be especially useful for requests such as:
 
 If durable FastAPI conventions, accepted router structures, repeated testing rules, or stable execution considerations need to be stored, save them in:
 
-`.software/agent-memory/python-agent/MEMORY.md`
+`.config/opencode/memory/fastapi/MEMORY.md`
