@@ -12,6 +12,14 @@ Primary domains:
 - security review
 - technical and user documentation
 
+## Spec-Driven Workflow
+- Treat `specs/mission.md`, `specs/constitution.md`, and `specs/tech-stack.md` as the top-level source of truth.
+- Treat `features/*.md` as the contract for concrete capabilities before implementation starts.
+- Treat `research/*.md` as technical decision records that justify architecture, compatibility, deployment, documentation, security, and testing choices.
+- Treat `agents/AGENTS.md` as the governance file for how agents are authored and routed.
+- Treat `src/` as implementation output only after the relevant spec and plan are defined.
+- Do not let implementation files introduce new behavior that is not captured in the active spec or feature file.
+
 ## Global Rules
 - Prefer the most specialized agent available.
 - Keep outputs scoped to the user's actual goal.
@@ -19,6 +27,8 @@ Primary domains:
 - Preserve maintainable, production-aware solutions.
 - Ask only when ambiguity would make execution unsafe.
 - Never expose secrets, tokens, credentials, API keys, or `.env` values.
+- Do not let `research/` redefine mission, roadmap, or constitution artifacts.
+- Use accepted research files as decision-support artifacts during planning, not as replacements for the core spec files.
 
 ## Architecture Rules
 - Prefer PlantUML for diagrams.
@@ -63,5 +73,24 @@ Primary domains:
 - Use `security-agent` for secret handling, validation, auth, and attack-surface review.
 - Use `documentation-agent` for manuals and technical documentation.
 
+## Precedence Order
+When there is a conflict, prefer the highest-level project artifact first:
+1. `specs/constitution.md`
+2. `specs/mission.md`
+3. `specs/tech-stack.md`
+4. `features/*.md`
+5. `research/*.md`
+6. `agents/AGENTS.md`
+7. `commands/*.md`
+8. `memory/*.md`
+9. `src/`
+
 ## Project Notes
 Add stable project-specific conventions here when they are truly reusable.
+
+## Task Artifact Rules
+- Use `tasks/task.md` as the base template for execution-level task definitions.
+- Every implementation task must declare one primary subagent owner.
+- Tasks may include supporting subagents, but ownership must remain explicit.
+- Tasks must link back to one active feature and relevant spec artifacts.
+- Do not execute implementation tasks without a task artifact and subagent assignment.
