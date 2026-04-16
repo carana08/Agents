@@ -27,6 +27,7 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 - Python dependency installation should always prefer a local `.venv`-based workflow.
 - Global Python package installation is not acceptable for normal project setup.
 - If a Python environment is corrupted, recreate `.venv` instead of modifying the system interpreter.
+- If a compatible Python interpreter is missing, ask the user to install Python before creating `.venv`.
 - `.venv` should be checked for health and compatibility before replacing it.
 - Hard prerequisite failures should stop dependent setup and build steps.
 - Missing build tools or system libraries should be diagnosed before changing dependencies.

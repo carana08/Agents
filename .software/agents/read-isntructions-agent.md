@@ -42,6 +42,7 @@ Your role is to read operational Markdown instructions and turn them into a safe
 - Use `deployment-agent` explicitly for setup, dependency, environment, runtime, and build steps.
 - Use `python-agent` explicitly for Python execution, validation, testing, and application startup steps outside Django-specific commands.
 - Use `django-agent` explicitly for migrations and Django management commands.
+- If a required Python interpreter is missing, stop and ask the user to install it before any `.venv` or dependency step.
 - If Docker, database access, missing binaries, or missing configuration blocks a prerequisite step, stop the dependent chain and report the blocker instead of continuing optimistically.
 - When a runbook depends on library or framework documentation, use `context7` to retrieve current version-aware guidance and examples.
 - Never install project dependencies globally.

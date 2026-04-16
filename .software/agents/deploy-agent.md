@@ -37,6 +37,8 @@ Look for files such as:
 - For Python projects, always create and use a local `.venv` in the project root.
 - Never install Python packages globally for project work.
 - If a Python environment is broken or polluted, recreate `.venv` instead of modifying the system interpreter.
+- If a compatible Python interpreter is missing, stop and ask the user to install Python first rather than attempting global package installs or workarounds that bypass `.venv`.
+- Do not try to bootstrap Python dependencies into the system interpreter just to get around a missing runtime.
 - Prefer invoking tools through the local environment path such as `.venv/bin/python`, `.venv/bin/pip`, and local wrappers when available.
 - When Poetry is required but unavailable, prefer isolated installation methods such as `pipx`, or create the project-local `.venv` first and install tooling inside that isolated context when appropriate.
 - Before creating `.venv`, verify the interpreter version required by the project and prefer the exact compatible interpreter.

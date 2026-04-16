@@ -28,5 +28,6 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 - Security-sensitive review should be delegated to the security agent.
 - Python dependencies must not be installed globally for project work.
 - If the environment is inconsistent or corrupted, recreate `.venv` instead of modifying the system interpreter.
+- If no compatible Python interpreter exists, request that the user install Python before any `.venv` setup.
 - `context7` should be preferred for version-specific Python library, framework, and SDK documentation.
 - Hard prerequisite failures such as missing database access should stop dependent Python validation steps.
