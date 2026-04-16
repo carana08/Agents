@@ -94,3 +94,10 @@ Add stable project-specific conventions here when they are truly reusable.
 - Tasks may include supporting subagents, but ownership must remain explicit.
 - Tasks must link back to one active feature and relevant spec artifacts.
 - Do not execute implementation tasks without a task artifact and subagent assignment.
+
+## Spec Run Rules
+- Use `/new-spec <feature-or-scope>` to initialize each new execution cycle.
+- `/new-spec` must create a timestamped run folder under `specs/runs/`.
+- Every run must be registered in `specs/index.md` before implementation begins.
+- If `specs/index.md` reports a conflict for the new run, implementation must stay blocked until resolved.
+- New runs must not overwrite previous runs; use `supersedes` semantics in `specs/index.md` when replacing prior work.
