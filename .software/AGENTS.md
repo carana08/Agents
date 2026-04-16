@@ -36,6 +36,13 @@ Primary domains:
 - Technical docs should describe responsibilities, dependencies, and flows.
 - Prefer Markdown unless the user requests another format.
 
+## Documentation And Library Guidance
+- Use the `context7` MCP server as the preferred source for library documentation, version-specific references, examples, migration notes, and current API usage.
+- When working with frameworks, SDKs, or third-party libraries, consult `context7` before relying on memory or generic examples.
+- Prefer version-aware documentation and examples that match the project dependencies when that information is available.
+- If the project's installed version is unknown, inspect the real dependency files first and then use `context7` to align guidance with that version.
+- When recommending a library or integration pattern, prioritize current official guidance and current stable practices available through `context7`.
+
 ## Framework Rules
 - Django work should preserve separation across models, views, serializers, forms, admin, and URLs.
 - Python work should preserve separation across services, validation, transport, and data access.

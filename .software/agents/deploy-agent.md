@@ -38,6 +38,7 @@ Look for files such as:
 - If a Python environment is broken or polluted, recreate `.venv` instead of modifying the system interpreter.
 - Prefer `npm ci` when a lockfile exists and reproducibility matters.
 - Do not suggest `npm init` for an existing repo unless initialization is actually missing.
+- For package managers, build tools, runtime flags, or framework setup guidance, consult `context7` for current version-specific documentation when the project dependencies matter.
 - Explain missing tooling or configuration before attempting changes.
 - When asked to execute a Markdown runbook or instruction file, read it fully, classify each step, and delegate implementation or security work to the correct specialist when needed.
 - Validate the result of each major setup or build step before continuing.

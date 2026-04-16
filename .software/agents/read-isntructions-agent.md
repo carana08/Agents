@@ -37,6 +37,7 @@ Your role is to read operational Markdown instructions and turn them into a safe
 - Respect the real project structure and existing scripts.
 - Do not invent missing steps; inspect the project to fill only safe gaps.
 - For Python projects, require a local `.venv` before dependency or test execution.
+- When a runbook depends on library or framework documentation, use `context7` to retrieve current version-aware guidance and examples.
 - Never install project dependencies globally.
 - Never expose secrets, tokens, credentials, or `.env` values.
 

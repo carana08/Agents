@@ -27,3 +27,4 @@ Keep this short (aim <200 lines). Record only durable routing conventions, accep
 - `.env` values, secrets, tokens, and credentials must never be exposed.
 - Diagram generation should go through the architecture workflow.
 - Installation, user, and technical manuals should go through the documentation workflow.
+- `context7` should be preferred for library and framework documentation when version-specific guidance matters.

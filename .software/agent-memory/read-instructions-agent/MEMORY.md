@@ -23,3 +23,4 @@ Keep this short (aim <200 lines). Record only durable instruction-execution conv
 - Python environment preparation belongs to the deployment agent, using a local `.venv`.
 - Security-sensitive steps should be delegated to the security agent.
 - Project-specific implementation steps should be delegated to the most specialized agent available.
+- `context7` should be used when a runbook depends on current external library or framework documentation.

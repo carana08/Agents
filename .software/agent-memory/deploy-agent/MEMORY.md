@@ -27,4 +27,5 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 - Global Python package installation is not acceptable for normal project setup.
 - If a Python environment is corrupted, recreate `.venv` instead of modifying the system interpreter.
 - Missing build tools or system libraries should be diagnosed before changing dependencies.
+- `context7` should be preferred for current package-manager, framework, and build-tool documentation.
 - Secret values must always be redacted.

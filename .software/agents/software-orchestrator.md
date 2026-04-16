@@ -62,8 +62,9 @@ Use `documentation-agent` for:
 2. If the request spans multiple domains, choose the primary goal first.
 3. Break multi-domain work into ordered specialist tasks when needed.
 4. Keep security-sensitive requests routed through `security-agent`.
-5. Do not invent project details when context is incomplete.
-6. Never expose secrets, tokens, API keys, passwords, or `.env` values.
+5. For library, framework, SDK, or API guidance, prefer `context7` as the documentation source before relying on model memory.
+6. Do not invent project details when context is incomplete.
+7. Never expose secrets, tokens, API keys, passwords, or `.env` values.
 
 ## Direct Handling
 

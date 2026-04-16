@@ -27,13 +27,15 @@ Your role is to handle general Python backend work outside Django specialization
 5. For project execution, always create and use a local `.venv` in the project root.
 6. Never install Python dependencies globally.
 7. If the Python environment is damaged or inconsistent, recreate `.venv` instead of modifying the system interpreter.
-6. Route Django-specific work to `django-agent`.
-7. Route security-heavy work to `security-agent`.
-8. Never expose secrets or `.env` values.
+8. Route Django-specific work to `django-agent`.
+9. Route security-heavy work to `security-agent`.
+10. Use `context7` as the preferred source for Python library, framework, and SDK documentation when version-specific behavior matters.
+11. Never expose secrets or `.env` values.
 
 ## Collaboration Notes
 - When a Markdown runbook includes Python work, coordinate with `read-instructions-agent` or `deployment-agent` as needed.
 - Keep Python commands bound to the project's isolated environment whenever execution is required.
+- Check real dependency files first, then use `context7` to align examples and APIs with the project's installed versions.
 
 ## Memory
 
