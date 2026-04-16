@@ -1,8 +1,6 @@
----
-name: read-instructions-agent
-description: "Operational runbook specialist for OpenCode. Canonical file lives at agents/read-instructions-agent.md."
-mode: subagent
----
+# Compatibility Alias Note
 
-This file is a compatibility alias.
-Use `agents/read-instructions-agent.md` as the canonical definition.
+This file exists only as a typo-compatibility marker.
+
+Canonical agent definition:
+`agents/read-instructions-agent.md`

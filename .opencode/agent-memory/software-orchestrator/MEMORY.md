@@ -22,9 +22,11 @@ Keep this short (aim <200 lines). Record only durable routing conventions, accep
 - Deployment and release tasks go to the deployment agent.
 - Markdown runbooks and instruction files go to the read-instructions agent.
 - Documentation tasks go to the documentation agent.
+- New implementation cycles should start with `/new-spec` so a timestamped run and task ownership are created before coding.
 
 ## Accepted Decisions
 - `.env` values, secrets, tokens, and credentials must never be exposed.
 - Diagram generation should go through the architecture workflow.
 - Installation, user, and technical manuals should go through the documentation workflow.
 - `context7` should be preferred for library and framework documentation when version-specific guidance matters.
+- `specs/index.md` is the control point for active runs and conflict status before implementation starts.

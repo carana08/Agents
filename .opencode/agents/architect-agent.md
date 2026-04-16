@@ -33,4 +33,4 @@ Your role is to identify the architecture artifact the user actually needs, keep
 ## Memory
 
 Stable architectural conventions belong in:
-`.software/agent-memory/architect-agent/MEMORY.md`
+`agent-memory/architect-agent/MEMORY.md`

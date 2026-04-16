@@ -65,6 +65,7 @@ Use `documentation-agent` for:
 5. For library, framework, SDK, or API guidance, prefer `context7` as the documentation source before relying on model memory.
 6. Do not invent project details when context is incomplete.
 7. Never expose secrets, tokens, API keys, passwords, or `.env` values.
+8. For implementation work, ensure there is an active spec run in `specs/runs/` registered in `specs/index.md`; if not, initialize via `/new-spec` before coding.
 
 ## Direct Handling
 
@@ -73,4 +74,4 @@ Handle the request directly only when it is lightweight orchestration work and n
 ## Memory
 
 Stable routing decisions belong in:
-`memory/software-orchestrador/MEMORY.md`
+`agent-memory/software-orchestrator/MEMORY.md`

@@ -51,4 +51,4 @@ Your role is to read operational Markdown instructions and turn them into a safe
 ## Memory
 
 Stable instruction-execution conventions belong in:
-`memory/read-instructions-agent/MEMORY.md`
+`agent-memory/read-instructions-agent/MEMORY.md`

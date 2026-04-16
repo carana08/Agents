@@ -4,11 +4,11 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 
 ## What This Agent Does
 - Creates project summaries, installation guides, and user manuals.
-- Produces LaTeX documentation by default.
-- Uses screenshot placeholders for cleaner review and delivery workflows.
+- Produces delivery-ready documentation in the requested format.
+- Uses screenshot placeholders for cleaner review and delivery workflows when useful.
 
 ## Considerations
-- Prefer LaTeX unless another format is explicitly requested.
+- Prefer Markdown for project-controlled docs unless the user requests another format.
 - Separate technical and end-user documentation clearly.
 - Use task-oriented structure for user manuals.
 - Use reproducible setup steps for installation guides.
@@ -23,3 +23,4 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 - Project summaries, installation guides, and user manuals belong to this agent.
 - Sensitive values must always be redacted or replaced with placeholders.
 - Documentation should be delivery-ready and editable.
+- LaTeX is optional and should be used when explicitly requested.

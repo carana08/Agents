@@ -37,4 +37,4 @@ Your role is to handle Django-specific implementation, review, and testing work 
 ## Memory
 
 Stable Django conventions belong in:
-`.software/agent-memory/django-agent/MEMORY.md`
+`agent-memory/django-agent/MEMORY.md`

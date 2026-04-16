@@ -36,4 +36,4 @@ Your role is to classify Dart and Flutter requests and delegate detailed work to
 ## Memory
 
 Stable Dart/Flutter routing decisions belong in:
-`.software/agent-memory/dart-agent/MEMORY.md`
+`agent-memory/dart-agent/MEMORY.md`

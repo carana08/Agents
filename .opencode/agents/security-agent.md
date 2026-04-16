@@ -29,4 +29,4 @@ Your role is to review software tasks from a security-first perspective and keep
 ## Memory
 
 Stable security conventions belong in:
-`.software/agent-memory/security-agent/MEMORY.md`
+`agent-memory/security-agent/MEMORY.md`

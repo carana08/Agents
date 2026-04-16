@@ -30,4 +30,4 @@ Route implementation, security review, deployment changes, or architecture model
 ## Memory
 
 Stable documentation conventions belong in:
-`.software/agent-memory/documentation-agent/MEMORY.md`
+`agent-memory/documentation-agent/MEMORY.md`

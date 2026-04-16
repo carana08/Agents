@@ -59,4 +59,4 @@ Do not own feature implementation, deep security auditing, or documentation as t
 ## Memory
 
 Stable deployment conventions belong in:
-`memory/deploy-agent/MEMORY.md`
+`agent-memory/deployment-agent/MEMORY.md`

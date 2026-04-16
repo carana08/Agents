@@ -82,7 +82,7 @@ When there is a conflict, prefer the highest-level project artifact first:
 5. `research/*.md`
 6. `agents/AGENTS.md`
 7. `commands/*.md`
-8. `memory/*.md`
+8. `agent-memory/*.md`
 9. `src/`
 
 ## Project Notes

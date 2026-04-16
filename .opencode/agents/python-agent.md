@@ -46,4 +46,4 @@ Your role is to handle general Python backend work outside Django specialization
 ## Memory
 
 Stable Python conventions belong in:
-`memory/python-agent/MEMORY.md`
+`agent-memory/python-agent/MEMORY.md`
