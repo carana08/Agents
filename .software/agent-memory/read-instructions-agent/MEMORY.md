@@ -18,9 +18,12 @@ Keep this short (aim <200 lines). Record only durable instruction-execution conv
 - Prefer direct delegation over trying to solve every domain inside one agent.
 - Require a local `.venv` before Python dependency or test execution.
 - Sensitive configuration and `.env` values must never be exposed.
+- Stop the workflow when a hard prerequisite fails instead of running dependent steps optimistically.
 
 ## Accepted Decisions
 - Python environment preparation belongs to the deployment agent, using a local `.venv`.
+- Python execution and validation steps belong to the python agent unless they are Django management commands.
+- Django management commands such as migrations belong to the Django agent.
 - Security-sensitive steps should be delegated to the security agent.
 - Project-specific implementation steps should be delegated to the most specialized agent available.
 - `context7` should be used when a runbook depends on current external library or framework documentation.

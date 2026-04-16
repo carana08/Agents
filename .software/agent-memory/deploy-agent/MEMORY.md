@@ -16,6 +16,7 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 
 ## Conventions
 - Prefer a local `.venv` in the project root for Python projects.
+- Prefer `.venv/bin/...` executables over system-wide commands for Python project execution.
 - Prefer checking `package.json` before suggesting npm commands.
 - Prefer using the project's real dependency files and scripts.
 - Validate environment readiness before build execution.
@@ -26,6 +27,8 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 - Python dependency installation should always prefer a local `.venv`-based workflow.
 - Global Python package installation is not acceptable for normal project setup.
 - If a Python environment is corrupted, recreate `.venv` instead of modifying the system interpreter.
+- `.venv` should be checked for health and compatibility before replacing it.
+- Hard prerequisite failures should stop dependent setup and build steps.
 - Missing build tools or system libraries should be diagnosed before changing dependencies.
 - `context7` should be preferred for current package-manager, framework, and build-tool documentation.
 - Secret values must always be redacted.

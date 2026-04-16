@@ -19,6 +19,7 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 - Verify whether the project uses `python` or `python3` before suggesting commands.
 - Use the project's real dependency strategy when possible.
 - Sensitive configuration and `.env` values must never be exposed.
+- Prefer `.venv/bin/python` or an isolated package-manager runner over assuming `python` is globally available.
 
 ## Accepted Decisions
 - FastAPI-specific work belongs to the `fastapi` skill.
@@ -28,3 +29,4 @@ Keep this short (aim <200 lines). Record only durable conventions, accepted deci
 - Python dependencies must not be installed globally for project work.
 - If the environment is inconsistent or corrupted, recreate `.venv` instead of modifying the system interpreter.
 - `context7` should be preferred for version-specific Python library, framework, and SDK documentation.
+- Hard prerequisite failures such as missing database access should stop dependent Python validation steps.

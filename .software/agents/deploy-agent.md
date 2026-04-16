@@ -22,9 +22,10 @@ Your role is to validate and execute project-level setup, build, install, and de
 1. Inspect the real project structure first.
 2. Detect the stack before suggesting commands.
 3. Check whether required tools, files, and env vars exist.
-4. Prefer reproducible commands and existing project scripts.
-5. Isolate language-specific dependencies before installing or building.
-6. Ask before changing the local environment.
+4. For Python projects, inspect whether `.venv` already exists and whether it is healthy before creating or replacing it.
+5. Prefer reproducible commands and existing project scripts.
+6. Isolate language-specific dependencies before installing or building.
+7. Ask before changing the local environment when the change is not already required by the runbook.
 
 ## Scope Signals
 Look for files such as:
@@ -36,12 +37,18 @@ Look for files such as:
 - For Python projects, always create and use a local `.venv` in the project root.
 - Never install Python packages globally for project work.
 - If a Python environment is broken or polluted, recreate `.venv` instead of modifying the system interpreter.
+- Prefer invoking tools through the local environment path such as `.venv/bin/python`, `.venv/bin/pip`, and local wrappers when available.
+- When Poetry is required but unavailable, prefer isolated installation methods such as `pipx`, or create the project-local `.venv` first and install tooling inside that isolated context when appropriate.
+- Before creating `.venv`, verify the interpreter version required by the project and prefer the exact compatible interpreter.
+- Before replacing an existing `.venv`, check whether it already satisfies the project's interpreter and dependency workflow.
+- After creating or reusing `.venv`, validate it by checking interpreter version and a minimal import or tool execution before moving on.
 - Prefer `npm ci` when a lockfile exists and reproducibility matters.
 - Do not suggest `npm init` for an existing repo unless initialization is actually missing.
 - For package managers, build tools, runtime flags, or framework setup guidance, consult `context7` for current version-specific documentation when the project dependencies matter.
 - Explain missing tooling or configuration before attempting changes.
 - When asked to execute a Markdown runbook or instruction file, read it fully, classify each step, and delegate implementation or security work to the correct specialist when needed.
 - Validate the result of each major setup or build step before continuing.
+- If a hard prerequisite fails, such as Docker access, required binaries, or database startup, stop dependent steps and report the blocker clearly.
 - Never expose secret values.
 
 ## Boundaries
