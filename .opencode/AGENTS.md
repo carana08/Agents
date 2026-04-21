@@ -12,14 +12,6 @@ Primary domains:
 - security review
 - technical and user documentation
 
-## Spec-Driven Workflow
-- Treat `specs/mission.md`, `specs/constitution.md`, and `specs/tech-stack.md` as the top-level source of truth.
-- Treat `features/*.md` as the contract for concrete capabilities before implementation starts.
-- Treat `research/*.md` as technical decision records that justify architecture, compatibility, deployment, documentation, security, and testing choices.
-- Treat `agents/AGENTS.md` as the governance file for how agents are authored and routed.
-- Treat `src/` as implementation output only after the relevant spec and plan are defined.
-- Do not let implementation files introduce new behavior that is not captured in the active spec or feature file.
-
 ## Global Rules
 - Prefer the most specialized agent available.
 - Keep outputs scoped to the user's actual goal.
@@ -73,6 +65,15 @@ Primary domains:
 - Use `security-agent` for secret handling, validation, auth, and attack-surface review.
 - Use `documentation-agent` for manuals and technical documentation.
 
+## Agent Directory Layout
+- Keep agent definitions grouped by domain under `agents/`.
+- Use `agents/orchestration/software-orchestrator.md` for the primary router.
+- Use `agents/arq/architect-agent.md` for architecture and UML specialization.
+- Use `agents/dev/django-agent.md`, `agents/dev/python-agent.md`, and `agents/dev/dart-agent.md` for implementation-focused agents.
+- Use `agents/qa/security-agent.md` and `agents/qa/documentation-agent.md` for quality-focused agents.
+- Use `agents/ops/deployment-agent.md` and `agents/ops/read-instructions-agent.md` for operational execution and runbook delegation.
+- Keep naming and folder conventions consistent across repositories to avoid routing drift.
+
 ## Precedence Order
 When there is a conflict, prefer the highest-level project artifact first:
 1. `specs/constitution.md`
@@ -80,7 +81,7 @@ When there is a conflict, prefer the highest-level project artifact first:
 3. `specs/tech-stack.md`
 4. `features/*.md`
 5. `research/*.md`
-6. `agents/AGENTS.md`
+6. `AGENTS.md`
 7. `commands/*.md`
 8. `agent-memory/*.md`
 9. `src/`
